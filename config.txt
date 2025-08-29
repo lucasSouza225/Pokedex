@@ -1,0 +1,14 @@
+-- Configuração do GIT
+git config --global user.name lucasSouza225
+git config --global user.email lucas2469y@gmail.com
+
+-- Criar o gitignore
+dotnet new gitignore
+
+-- Criar o projeto MVC
+dotnet new mvc -o Pokedex
+
+cd Pokedex
+
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.8
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 9.0.0
